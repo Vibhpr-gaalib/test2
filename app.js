@@ -4,7 +4,7 @@ const parser = require('body-parser');
 
 app.use(parser.urlencoded({extended:false}));
 const port = process.env.PORT || 3000
-app.set('view engine',"ejs");
+app.set("view engine","ejs");
 
 
 
@@ -13,8 +13,8 @@ app.set('view engine',"ejs");
 
 
 app.get("/",(req,res)=>{
-res.render("home");
-})
+res.render("Home");
+});
 
 //converting data into to the object
 const data = function(value ){
